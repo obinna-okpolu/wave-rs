@@ -33,9 +33,9 @@ cargo test --test playback_test -- --ignored --nocapture
 Does not support WAVE_FORMAT_EXTENSIBLE formats
 
 ## References
-- **Kabal, Peter**    [(Audio File Format Specifications: WAVE Specifications)](https://www.mmsp.ece.mcgill.ca/Documents/AudioFormats/WAVE/WAVE.html)
-- **Microsoft Corporation**    [(Waveform Audio File Format)](https://learn.microsoft.com/en-us/previous-versions/windows/embedded/ms925318(v=msdn.10))
-- **Overton, David**    [(Playing Audio in Windows using waveOut Interface)](https://github.com/Planet-Source-Code/david-overton-playing-audio-in-windows-using-waveout-interface__3-4422)
+- **Kabal, Peter**    [Audio File Format Specifications: WAVE Specifications](https://www.mmsp.ece.mcgill.ca/Documents/AudioFormats/WAVE/WAVE.html)
+- **Microsoft Corporation**    [Waveform Audio File Format](https://learn.microsoft.com/en-us/previous-versions/windows/embedded/ms925318(v=msdn.10))
+- **Overton, David**    [Playing Audio in Windows using waveOut Interface](https://github.com/Planet-Source-Code/david-overton-playing-audio-in-windows-using-waveout-interface__3-4422)
 
 ## License
 MIT / Apache 2.0
