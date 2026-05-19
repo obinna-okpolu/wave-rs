@@ -1,6 +1,6 @@
 [package]
 name = "wave-rs"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "A lightweight .WAV audio player CLI for Windows"
 license = "MIT"
