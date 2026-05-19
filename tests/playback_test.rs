@@ -23,7 +23,7 @@ fn test_all_wav_files_playback() {
 
             let mut file = fs::File::open(&path).expect("Failed to open file");
 
-            match wav::parser::parse_file(&mut file) {
+            match wave_rs::parser::parse_file(&mut file) {
                 Ok((format, mut reader)) => {
                     println!(
                         "Format: {}ch, {}Hz, {}bit, code: {}",
@@ -42,7 +42,7 @@ fn test_all_wav_files_playback() {
                     }
 
                     // This will block until the file is finished playing
-                    wav::win32::play_audio(&format, &mut reader, &mut file);
+                    wave_rs::win32::play_audio(&format, &mut reader, &mut file);
                     println!("Finished playing: {}", filename);
                 }
                 Err(e) => {
