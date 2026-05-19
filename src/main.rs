@@ -5,7 +5,7 @@ fn main() {
     let args: Vec<String> = env::args().collect();
 
     if args.len() < 2 {
-        eprintln!("Usage: wav <file.wav>");
+        eprintln!("Usage: wave-rs <file.wav>");
         std::process::exit(1);
     }
 
