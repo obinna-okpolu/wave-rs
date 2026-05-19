@@ -15,7 +15,7 @@ fn main() {
         std::process::exit(1);
     });
 
-    let (format, mut reader) = wav::parser::parse_file(&mut file).unwrap_or_else(|e| {
+    let (format, mut reader) = wave_rs::parser::parse_file(&mut file).unwrap_or_else(|e| {
         eprintln!("Failed to parse '{}': {}", path, e);
         std::process::exit(1);
     });
@@ -25,5 +25,5 @@ fn main() {
         path, format.channel, format.sample_rate, format.bits_per_sample
     );
 
-    wav::win32::play_audio(&format, &mut reader, &mut file);
+    wave_rs::win32::play_audio(&format, &mut reader, &mut file);
 }
